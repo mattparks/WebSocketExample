@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.9.0 FATAL_ERROR)
+project(WebSocketExample VERSION 0.1.0 LANGUAGES CXX)
+
+include(GNUInstallDirs)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
+
+add_subdirectory(Core)
+add_subdirectory(Encrypt)
+add_subdirectory(Networking)
